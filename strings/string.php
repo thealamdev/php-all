@@ -5,8 +5,8 @@
  echo str_word_count($string)."<br>";
  echo strrev($string)."<br>";
  echo strpos($string,"all the")."<br>";
- echo str_replace("Bangladesh","world",$string);
+ echo str_replace("Bangladesh","world",$string)."<br>";
 
-  
+ echo $string .= "Hey"; 
 
 ?>
