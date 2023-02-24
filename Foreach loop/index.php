@@ -49,7 +49,7 @@ $city = [
 
 
 echo $city[0]. "\n";
-echo $city[2]."\n";
+echo $city[2]. "\n";
 
 // print by foreach loop:
 
