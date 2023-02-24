@@ -6,3 +6,14 @@ for($i=1; $i<100; $i=$i+10){
     }
     echo "<br>";
 }
+
+
+for($i=1;$i<10;$i++){
+    echo $i;
+    if($i == 5){
+        goto abc;
+    }
+    
+}
+abc:
+echo "hi";
