@@ -19,3 +19,4 @@ $total = sum(55, 60, 80);
 // print_r($total);
 $per = average($total['sum'], $total['arg']);
 echo $per . "%";
+// print_r($total['arg']);
