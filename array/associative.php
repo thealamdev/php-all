@@ -17,27 +17,27 @@ $infos = [
 $subject_name = [
     [
         'name' => 'Bangla',
-        'mark' => "bangla",
+        'mark' => "58",
     ],
 
     [
         'name' => 'English',
-        'mark' => "english",
+        'mark' => "70",
     ],
 
     [
         'name' => 'Math',
-        'mark' => 'math',
+        'mark' => '89',
     ],
 
     [
         'name' => 'Science',
-        'mark' => 'science',
+        'mark' => '85',
     ],
 
     [
-        'name' => 'Islam Education',
-        'mark' => 'islam',
+        'name' => 'Islam',
+        'mark' => '88',
     ],
      
 ];
