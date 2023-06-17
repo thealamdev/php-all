@@ -1,7 +1,7 @@
 <?php
 
 $arry = [
-    "apple",
+    "apple" => 'Shah alam',
     'oil',
     'bannana'
 ];
