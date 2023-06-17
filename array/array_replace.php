@@ -19,5 +19,5 @@ $array2 = [
 
 
 echo "<pre>"; 
-print_r($newArray = array_replace($array,$array2));  
+print_r($newArray = array_replace_recursive($array,$array2));  
 echo "</pre>";
