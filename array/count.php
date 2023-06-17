@@ -15,7 +15,8 @@ $result = [
     1,2,3,2,6,1,1
 ];
 
-echo count($array);
+echo count($array,true);
+echo "<br>";
 echo sizeof($array);
 
 echo "<pre>";
