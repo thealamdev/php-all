@@ -34,13 +34,30 @@ $color2 = [
     'g' => 'green'
 ];
 
+// 3rd array:
+$fruits3 = [
+    'a' => 'apple',
+    'b' => 'bannana',
+    'c' => 'carrots',
+];
+
+$color3 = [
+    'r' => 'red',
+    'b' => ['color' => 'red',
+    'key' => 'green'            
+],
+    'g' => 'green'
+];
+
 $newArray = array_merge($fruits, $color); // this is for array_merge
 $newArray2 = array_merge($fruits2, $color2);
+$newArray3 = array_merge_recursive($fruits3, $color3);
 
 echo "<pre>";
     print_r($newArray); // here it replace $fruits 'b'=> 'bannana' and set $color 'b' => 'blue' .
     print_r($newArray2);  // here is not common key between two array.
+    print_r($newArray3);  // here is not common key between two array.
 
     // if we want that we would not replace 2nd array key by 1st array. then we can just concatinate two array.
-    print_r($fruits + $color);
+    // print_r($fruits + $color);
 echo"</pre>";
