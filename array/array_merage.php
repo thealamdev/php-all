@@ -56,7 +56,7 @@ $newArray3 = array_merge_recursive($fruits3, $color3);
 echo "<pre>";
     print_r($newArray); // here it replace $fruits 'b'=> 'bannana' and set $color 'b' => 'blue' .
     print_r($newArray2);  // here is not common key between two array.
-    print_r($newArray3);  // here is not common key between two array.
+    print_r($newArray3);  // this is for multidimentional array.
 
     // if we want that we would not replace 2nd array key by 1st array. then we can just concatinate two array.
     // print_r($fruits + $color);
