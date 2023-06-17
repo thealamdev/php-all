@@ -22,3 +22,25 @@ $color = [
 ];
 
 
+$fruits2 = [
+    'a' => 'apple',
+    'b' => 'bannana',
+    'c' => 'carrots',
+];
+
+$color2 = [
+    'r' => 'red',
+    'd' => 'blue',
+    'g' => 'green'
+];
+
+$newArray = array_merge($fruits, $color); // this is for array_merge
+$newArray2 = array_merge($fruits2, $color2);
+
+echo "<pre>";
+    print_r($newArray); // here it replace $fruits 'b'=> 'bannana' and set $color 'b' => 'blue' .
+    print_r($newArray2);  // here is not common key between two array.
+
+    // if we want that we would not replace 2nd array key by 1st array. then we can just concatinate two array.
+    print_r($fruits + $color);
+echo"</pre>";
