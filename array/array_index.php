@@ -16,5 +16,7 @@ for($i = 0; $i<count($array);$i++){
     echo "array element is" . $array[$i] , "<br>";
 }
 
+ 
 
+ 
 ?>

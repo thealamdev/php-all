@@ -16,3 +16,4 @@ echo "<pre>";
    print_r(array_change_key_case($array,CASE_LOWER));
    print_r($array3);
 echo"</pre>";
+?>
