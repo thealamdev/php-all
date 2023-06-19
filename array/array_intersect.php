@@ -12,9 +12,15 @@ $array2 =[
     'description' => 'This is Mehedi Hasan',
 ];
 
+$array3 = [
+    'name' => 'Shah Alam',
+    'age' => 34,
+    'dep' => 'cse',
+];
+
 echo "<pre>"; 
- print_r($newArray = array_intersect($array1,$array2));
- print_r($newArray = array_intersect_assoc($array1,$array2));
+ print_r($newArray = array_intersect($array1,$array2,$array3));
+ print_r($newArray = array_intersect_assoc($array1,$array2,$array3));
 
 echo"</pre>";
 
