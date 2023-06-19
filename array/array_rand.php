@@ -3,6 +3,10 @@ $a = [
     1,2,3,4,5,6
 ];
 
+echo "<pre>";  
+print_r(shuffle($a));
+echo"</pre>";
+
 $new = array_rand($a);
 $val = $new + 1;
 
@@ -36,4 +40,4 @@ if ($val == 6) { ?>
     <img src="https://image.winudf.com/v2/image1/Y29tLm9yYW5nZWxvLmRpY2Vfc2NyZWVuXzBfMTU5NzQ4Mzk5MF8wOTg/screen-0.webp?fakeurl=1&type=.webp" alt="" width="100px">
 <?php
 }?>
-
+ 
