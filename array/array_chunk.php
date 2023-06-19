@@ -8,6 +8,8 @@ $arr = [
     'phone' => 378,
 ];
 
+
+ 
 $new = array_chunk($arr,3,true);
 
 echo "<pre>";
