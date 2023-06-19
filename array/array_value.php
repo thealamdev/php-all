@@ -14,5 +14,6 @@ echo "<pre>";
 print_r($newA = array_values($arr));
 print_r(array_keys($arr));
 print_r(array_unique($newA));
+print_r(array_count_values($arr));
 
 echo"</pre>";
