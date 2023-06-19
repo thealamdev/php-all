@@ -8,19 +8,21 @@ $array1 = [
 ];
 $array2 =[
     'name' => 'Shah Alam',
-    'ag' => 45,
+    'age' => 45,
     'description' => 'This is Mehedi Hasan',
 ];
 
 $array3 = [
     'name' => 'Shah Alam',
-    'age' => 34,
+    'age' => 55,
     'dep' => 'cse',
 ];
 
 echo "<pre>"; 
  print_r($newArray = array_intersect($array1,$array2,$array3));
  print_r($newArray = array_intersect_assoc($array1,$array2,$array3));
+ print_r($newArray = array_intersect_key($array1,$array2,$array3));
+ print_r($newArray = array_key_exists('age',$array2));
 
 echo"</pre>";
 
