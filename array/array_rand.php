@@ -3,14 +3,14 @@ $a = [
     1,2,3,4,5,6
 ];
 
-echo "<pre>";  
-print_r(shuffle($a));
-echo"</pre>";
+// echo "<pre>";  
+// print_r(shuffle($a));
+// echo"</pre>";
 
 $new = array_rand($a);
 $val = $new + 1;
 
-echo $val;
+// echo $val;
 if ($val == 1) { ?>
     <img src="https://t3.ftcdn.net/jpg/01/97/16/30/360_F_197163001_H2gm3LqIrVTm7Fne6kclwRDfMcfm57BC.jpg" alt="" width="100px">
 <?php
