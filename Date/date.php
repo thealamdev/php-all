@@ -25,5 +25,13 @@ echo 'N =' . date('N') . "<br>";
 echo 'D =' . date('D') . "<br>"; 
 echo 'l =' . date('l') . "<br>"; 
 
+// how many days of year:
+
+echo "Days is ". date('z'). "<br>";
+echo "Week of the year is ". date('W'). "<br>";
+echo "days of the month ". date('t'). "<br>";
+echo "Time zone". date('T'). "<br>";
+echo "leap year or not". date('L'). "<br>";
+
 
 
