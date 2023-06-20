@@ -24,7 +24,7 @@ $array = [
 
 $arr = [];
 
-function myFun($value, $key)
+function myFun(&$value, $key)
 {
     global $arr;  // Add this line to access $arr within the function
     array_push($arr, $value);  // Use $arr instead of $array
