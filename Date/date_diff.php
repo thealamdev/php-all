@@ -1,3 +1,23 @@
+<?php
+
+if (isset($_POST['submit'])) {
+    $start = $_POST['start_date'];
+    $end = $_POST['end_date'];
+
+    $start_date = date_create($start, timezone_open('Asia/Dhaka'));
+    $end_date = date_create($end, timezone_open('Asia/Dhaka'));
+
+    $differ_date = date_diff($start_date, $end_date);
+
+    echo "<pre>";
+    print_r($differ_date);
+    echo "</pre>";
+}
+
+
+
+?>
+ 
  <!doctype html>
  <html lang="en">
 
@@ -25,6 +45,9 @@
 
                      <button type="submit" name="submit" class="btn btn-primary">Calculate</button>
                  </form>
+                <h1><?php echo $differ_date->y ?></h1>
+                 <h2><?php echo $differ_date->m ?></h2>
+                 <h2><?php echo $differ_date->d ?></h2>
              </div>
          </div>
      </div>
@@ -35,26 +58,4 @@
 
 
 
- <?php
-
-    if (isset($_POST['submit'])) {
-        $start = $_POST['start_date'];
-        $end = $_POST['end_date'];
-
-        $start_date = date_create($start, timezone_open('Asia/Dhaka'));
-        $end_date = date_create($end, timezone_open('Asia/Dhaka'));
-    
-        $differ_date = date_diff($start_date, $end_date);
-
-        echo "<pre>";
-        print_r($differ_date->days);
-        echo "</pre>";
-
-    }
-
-
-    
-
  
-
-    ?>
