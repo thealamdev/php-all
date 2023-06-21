@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
                 <form method="POST">
                     <div class="mb-3">
                         <label for="start_date" class="form-label">Start Date</label>
-                        <input type="datetime-local" name="start_date" class="form-control" id="start_date" aria-describedby="emailHelp">
+                        <input type="datetime-local" name="start_date"  class="form-control" id="start_date" aria-describedby="emailHelp">
                     </div>
 
                     <div class="mb-3">
