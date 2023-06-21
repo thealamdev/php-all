@@ -33,3 +33,13 @@ echo gettype($TIME);
 echo $TIME->format('a') . "<br>";
 
 echo date_format($TIME, 'd-F-Y H:i:s a');
+//  ==========================================================
+$start_date = date_create('02-12-2023');
+$end_date = date_create('02-12-2023');
+
+$diff = date_diff($start_date,$end_date);
+
+echo "<pre>";
+ print_r($TIME);
+ print_r($diff);
+echo "</pre>";
