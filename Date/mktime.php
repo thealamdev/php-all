@@ -1,6 +1,7 @@
 <?php
 
+// by using mkdate()  or gmmktime() we can print anything of privious date. For Example, i want to show what is the week name of my birthday.
+date_default_timezone_set('Asia/Dhaka');
+$date = gmmktime('4','45 ','3 ','11 ','28','1999');
 
-$date = gmmktime('4','45 ','3 ','5 ','5 ','2021');
-
-echo date('y-m-d',$date);
+echo "I born in " . date('l',$date);
