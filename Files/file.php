@@ -1,3 +1,3 @@
 <?php
 
-readfile('web.txt');
+readfile('cv.pdf');
