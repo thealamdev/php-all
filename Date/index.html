@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download File</title>
+</head>
+<body>
+    
+    <input type="text" id="input_form">
+    <button id="download_btn">Download</button>
+
+
+
+    <script>
+        const inputUrl = document.querySelector('input');
+        const downloadBtn = document.querySelector('button');
+
+
+        downloadBtn.addEventListener('click',async () => {
+            try{
+                const response = await fetch(inputUrl.value);
+                const file = await response.blob();
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(file);
+                link.download = new Date().getTime();
+                link.click();
+            }catch(error){
+                alert('Failed to download');
+            }
+        })
+    </script>
+</body>
+</html>
+
