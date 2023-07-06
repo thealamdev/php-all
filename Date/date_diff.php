@@ -9,9 +9,9 @@ if (isset($_POST['submit'])) {
 
     $differ_date = date_diff($start_date, $end_date);
 
-    // echo "<pre>";
-    // print_r($differ_date);
-    // echo "</pre>";
+    echo "<pre>";
+    print_r($differ_date);
+    echo "</pre>";
 }
 
 
