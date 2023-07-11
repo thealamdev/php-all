@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 
 <head>
@@ -55,4 +55,6 @@
     // print_r($_SERVER);
     // echo getenv("REMOTE_ADDR");
     echo"</pre>";
-?>
+?> 
+
+
